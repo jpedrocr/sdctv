@@ -16,3 +16,4 @@ after.sh
 aliases
 Vagrantfile
 run_atom.bat
+public\api_test_client.html
