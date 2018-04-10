@@ -16,7 +16,6 @@ class CreateScoreboardsTable extends Migration
         Schema::enableForeignKeyConstraints();
         Schema::create('scoreboards', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('game_id')->nullable();
             $table->unsignedInteger('quarter')->nullable();
             $table->time('timer')->nullable();
             $table->unsignedInteger('scoreA')->nullable();
