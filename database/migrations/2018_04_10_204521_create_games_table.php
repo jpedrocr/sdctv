@@ -17,14 +17,14 @@ class CreateGamesTable extends Migration
         Schema::create('games', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('gameNumber')->nullable();
-            $table->unsignedInteger('teamA_id')->nullable();
-            $table->unsignedInteger('teamB_id')->nullable();
+            $table->unsignedInteger('hometeam_id')->nullable();
+            $table->unsignedInteger('outteam_id')->nullable();
             $table->dateTime('gameSchedule')->nullable();
             $table->string('competitionLogo')->nullable();
             $table->timestamps();
 
-            $table->foreign('teamA_id')->references('id')->on('teams');
-            $table->foreign('teamB_id')->references('id')->on('teams');
+            $table->foreign('hometeam_id')->references('id')->on('teams');
+            $table->foreign('outteam_id')->references('id')->on('teams');
         });
     }
 
