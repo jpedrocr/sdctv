@@ -13,6 +13,12 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/game', function (Request $request) {
-    return App\Game::with(['homeTeam', 'outTeam', 'scoreboard'])->first();
-});
+// Route::middleware('auth:api')->get('/game', function (Request $request) {
+//     return App\Game::with(['homeTeam', 'outTeam', 'scoreboard'])->first();
+// });
+Route::apiResource('scoreboard', 'API\ScoreboardController')->only([
+    'show', 'update'
+])->middleware('auth:api');
+Route::apiResource('game', 'API\GameController')->only([
+    'show', 'update'
+])->middleware('auth:api');
