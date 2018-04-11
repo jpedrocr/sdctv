@@ -19,8 +19,8 @@ class CreateScoreboardsTable extends Migration
             $table->unsignedInteger('game_id');
             $table->unsignedInteger('quarter')->nullable();
             $table->time('timer')->nullable();
-            $table->unsignedInteger('scoreA')->nullable();
-            $table->unsignedInteger('scoreB')->nullable();
+            $table->unsignedInteger('home_score')->nullable();
+            $table->unsignedInteger('out_score')->nullable();
             $table->timestamps();
 
             $table->foreign('game_id')->references('id')->on('games');

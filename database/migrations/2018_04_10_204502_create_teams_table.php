@@ -16,7 +16,7 @@ class CreateTeamsTable extends Migration
         Schema::enableForeignKeyConstraints();
         Schema::create('teams', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('shortName')->nullable();
+            $table->string('short_name')->nullable();
             $table->string('name')->nullable();
             $table->string('color')->nullable();
             $table->string('logo')->nullable();

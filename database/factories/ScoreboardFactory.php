@@ -7,7 +7,7 @@ $factory->define(App\Scoreboard::class, function (Faker $faker) {
         'game_id' => factory(App\Game::class)->create()->id,
         'quarter' => $faker->numberBetween(1,4),
         'timer' => $faker->time('H:i:s'),
-        'scoreA' => $faker->numberBetween(0,120),
-        'scoreB' => $faker->numberBetween(0,120)
+        'home_score' => $faker->numberBetween(0,120),
+        'out_score' => $faker->numberBetween(0,120)
     ];
 });

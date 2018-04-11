@@ -13,10 +13,10 @@ class Team extends Model
     */
     public function homeGames()
     {
-      return $this->hasMany('App\Game', 'hometeam_id');
+      return $this->hasMany('App\Game', 'home_team_id');
     }
-    public function outgames()
+    public function outGames()
     {
-      return $this->hasMany('App\Game', 'outteam_id');
+      return $this->hasMany('App\Game', 'out_team_id');
     }
 }

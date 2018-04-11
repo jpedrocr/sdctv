@@ -17,10 +17,10 @@ class Game extends Model
   }
   public function homeTeam()
   {
-    return $this->belongsTo('App\Game', 'hometeam_id');
+    return $this->belongsTo('App\Team', 'home_team_id');
   }
   public function outTeam()
   {
-    return $this->belongsTo('App\Game', 'outteam_id');
+    return $this->belongsTo('App\Team', 'out_team_id');
   }
 }
