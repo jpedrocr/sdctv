@@ -16,9 +16,9 @@
   let resources = document.getElementById('resources');
   resources.addEventListener('click', e => {
     e.preventDefault();
-    let token = '';
-    fetch('https://sdctv.test/api/game/139921', {
-    // fetch('https://sdctv.test/api/scoreboard/139921', {
+    let token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjRmNzFkMzMzODY0YmUzMWJhYzdkNGYxYTUzZDBiMjkxZTIyMzQ5YTg4OTQxMWYxNTU3MDBjMmJiNjU2ZTA3OTA5YjJhZjZjYmY3YjI0MTA1In0.eyJhdWQiOiIxIiwianRpIjoiNGY3MWQzMzM4NjRiZTMxYmFjN2Q0ZjFhNTNkMGIyOTFlMjIzNDlhODg5NDExZjE1NTcwMGMyYmI2NTZlMDc5MDliMmFmNmNiZjdiMjQxMDUiLCJpYXQiOjE1MjMzODAzMzQsIm5iZiI6MTUyMzM4MDMzNCwiZXhwIjoxNTU0OTE2MzM0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.xHdVPA7gO5djWfcANlMKqnE8XTTSL7f5Y8GM2Cv6ME2d2XtxF5OVh1yPqZJAyB95pyoUwIjGyLn16f0IYK8rJg5SdI1Na1FfMUwKYc21mapE-IUHfE6YM0QzM-zGm61ZUQ1h6cjdWrxQuhN_3yVl6IODaD1l3fLQaRE6fB0TPilYkutzXwG4JwbmMTaWipypxSbizyvcPf2A_4MUltvSOdzIn1GR6WgujxrSYBR84ZN5ScedSmlOZwoj27HqmQoVf5z5ejx66g9m-vM9sY24DeqckVFp4adY9L845Hekl6cjJURw1angOLTiMQeg4DMctz9brR81x27VaJ9EjsH4r2sCHW41XnsDutSiBJJy_higslvV5xfzGwYJXsIHN1DUlN15XTRS8cXI8cSMHy85tBMBfPupclam9FmjlMAqX8aNm1oQUeEDkLCfUlKv1_Woqxkfk-Jra64RI8sY0y8eyk6nooP6411IdnkDnr5EskHAsrr0pPpowQzb2IuRHaUSbtMMUJ5267hmALX_i-KdsmZhy8ZIOFxBf3rhAPlbn0cQO6NJ-xOQkdGJ6AH49o9KGuFoZDBCxg9ybUNjuyd74lUJJPCwMjCzUPcKMNu6A-FU7_PLUJTqXzXaLSoiyBa3hX98vNoBkK-N9ulEdKdfAGUgDzVtMR23C3L_AGKIOtQ';
+    fetch('https://sdctv.test/api/games/139921', {
+    // fetch('https://sdctv.test/api/scoreboards/139921', {
       // method: 'GET',
       method: 'PUT',
       // body: JSON.stringify({ quarter: 4, timer: '00:02', home_score: 80, out_score: 66 }),

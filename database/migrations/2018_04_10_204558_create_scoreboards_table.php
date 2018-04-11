@@ -21,9 +21,10 @@ class CreateScoreboardsTable extends Migration
             $table->time('timer')->nullable();
             $table->unsignedInteger('home_score')->nullable();
             $table->unsignedInteger('out_score')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
 
-            $table->foreign('game_id')->references('id')->on('games');
+            $table->foreign('game_id')->references('id')->on('games')->onDelete('cascade');
         });
     }
 

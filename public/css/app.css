@@ -10394,3 +10394,97 @@ a.text-dark:focus {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+body.clean {
+  margin: 0px;
+}
+
+div.scoreboard {
+  /* background-color: aqua; */
+  position: absolute;
+  color: #ffffff;
+  top: 15px;
+}
+
+div.scoreboard.teamLogo {
+  top: 10px;
+  text-align: center;
+  width: 40px;
+}
+
+div.scoreboard.teamLogo.teamA {
+  left: 0px;
+}
+
+div.scoreboard.teamLogo.teamB {
+  left: 520px;
+}
+
+div.scoreboard.teamLogo > img {
+  max-height: 40px;
+  max-width: 40px;
+}
+
+div.scoreboard.teamName {
+  font-weight: 700 !important;
+  top: 20px;
+  width: 180px;
+}
+
+div.scoreboard.teamName.teamA {
+  left: 40px;
+  text-align: left;
+}
+
+div.scoreboard.teamName.teamB {
+  left: 340px;
+  text-align: right;
+}
+
+div.scoreboard.teamScore {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  width: 40px;
+}
+
+div.scoreboard.teamScore.teamA {
+  left: 220px;
+}
+
+div.scoreboard.teamScore.teamB {
+  left: 300px;
+}
+
+div.scoreboard.compLogo {
+  left: 260px;
+  text-align: center;
+  top: 5px;
+  width: 40px;
+}
+
+div.scoreboard.compLogo > img {
+  max-height: 40px;
+  max-width: 40px;
+}
+
+div.scoreboard.timer {
+  font-size: 1.5rem;
+  text-align: center;
+  top: 45px;
+  width: 560px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+div.scoreboard.quarter {
+  width: 560px;
+  text-align: center;
+  top: 70px;
+  font-size: 80%;
+  font-weight: 400;
+}
+
+div.canvas {
+  z-index: 100;
+}
+

@@ -15,12 +15,4 @@ class Game extends Model
   {
     return $this->hasOne('App\Scoreboard');
   }
-  public function homeTeam()
-  {
-    return $this->belongsTo('App\Team', 'home_team_id');
-  }
-  public function outTeam()
-  {
-    return $this->belongsTo('App\Team', 'out_team_id');
-  }
 }
